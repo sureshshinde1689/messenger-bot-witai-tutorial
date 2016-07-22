@@ -1,6 +1,6 @@
 'use strict';
 
-const WIT_TOKEN = process.env.WIT_TOKEN || YXJRNRKTUKG6CRDMNDDQU6UE7YYR7QMX
+const WIT_TOKEN = process.env.WIT_TOKEN || 'YXJRNRKTUKG6CRDMNDDQU6UE7YYR7QMX'
 if (!WIT_TOKEN) {
   throw new Error('Missing WIT_TOKEN. Go to https://wit.ai/docs/quickstart to get one.')
 }
@@ -11,7 +11,7 @@ if (!FB_PAGE_TOKEN) {
 	throw new Error('Missing FB_PAGE_TOKEN. Go to https://developers.facebook.com/docs/pages/access-tokens to get one.')
 }
 
-var FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN || 'just_do_it'
+var FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN || 'itschamp'
 
 module.exports = {
   WIT_TOKEN: WIT_TOKEN,
