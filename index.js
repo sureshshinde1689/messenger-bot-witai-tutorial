@@ -4,7 +4,7 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
 
-var Config = require('config.js')
+var Config = require('./config')
 var FB = require('./connectors/facebook')
 var Bot = require('./bot')
 
@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
 
 // for facebook to verify
 app.get('/webhooks', function (req, res) {
-  if (req.query['hub.verify_token'] === 'itschamp') {
+  if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN)) {
   res.send(req.query['hub.challenge'])
   }
   res.send('Error, wrong token')
