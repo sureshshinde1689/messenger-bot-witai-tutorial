@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 // for facebook to verify
 app.get('/webhooks', function (req, res) {
   if (req.query['hub.verify_token'] === 'itschamp') {
-    res.send(req.query['hub.challenge'])
+    res.send('1986959530')
   }
   res.send('Error, wrong token')
 })
