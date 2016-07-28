@@ -65,13 +65,7 @@ var read = function (sender, message, reply) {
 			}
 		})
 	}
-	if(message === 'Send me images' || message === 'project images'){
-		var reply = 
-    new builder.Message()
-        .setText(session, text)
-        .addAttachment({ fallbackText: text, contentType: 'image/jpeg', contentUrl: 'http://sunshinehills.in/img/gallery/1.jpg' });
-		session.send(reply);
-	}
+
 }
 
 
