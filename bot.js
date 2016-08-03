@@ -38,30 +38,7 @@ var read = function (sender, message, reply) {
 		message = 'Hello yourself! I am a chat bot. How may I help you today'
 		reply(sender, message)
 	}
-	else if (text=== 'Where is the project location?'){
-				sendTextMessage(sender, "NIBM Annexe, Undri-Pisoli Road", token)
-			}
-			else if (text=== 'What all amenities do you have?'){
-				sendTextMessage(sender, "Clubhouse, swimming pool, amphitheater, gymnasium, garden, power backups for elevators etc.", token)
-			}
-			else if (text=== 'What are the areas of 1BHK and 2BHK Flats?'){
-				sendTextMessage(sender, "1 BHK is 560 sq ft and 2 BHK is 950 Sq Ft.", token)
-			}
-			else if (text=== 'What are the rates?'){
-				sendTextMessage(sender, "1 BHK will be 28 Lakh (all inclusive) and 2BHK 46 Lakh (all inclusive)", token)
-			}
-			else if (text=== 'When will we get the possession?'){
-				sendTextMessage(sender, "Flats are ready possession flats.", token)
-			}
-			else if (text=== 'When can I see the site?'){
-				sendTextMessage(sender, "Sir, please let us know your convenient timings and we will book your site-visit accordingly.", token)
-			}
-			else if (text=== 'Do you have bank finance facility available?'){
-				sendTextMessage(sender, "Yes, you can get the home-loan assistance from HDFC, AXIS and SBI.", token)
-			}
-			else if (text=== 'Will you provide the services to do the site visit?'){
-				sendTextMessage(sender, "Our executives will assist you to locate the project. Although we do not provide pick and drop assistance.", token)
-			}else {
+	else {
 		// Let's find the user
 		var sessionId = findOrCreateSession(sender)
 		// Let's forward the message to the Wit.ai bot engine
